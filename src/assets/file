@@ -1,2 +1,1 @@
-import Todo from "../Todo/todo";
-import AddTodo from "../AddTodo/addTodo";
+
