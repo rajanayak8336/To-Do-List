@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Header from "./components/Header/Header";
 import TodoList from "./components/TodoList/TodoList";
-
 import "./App.css";
 
 const App = () => {
