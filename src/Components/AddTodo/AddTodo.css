@@ -1,0 +1,95 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 23, 42, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.add-todo-form {
+  width: 100%;
+  max-width: 500px;
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.form-header h2 {
+  margin: 0;
+  color: #1e293b;
+}
+
+.close-btn {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background-color: #f1f5f9;
+  border-radius: 6px;
+  font-size: 22px;
+  color: #475569;
+}
+
+.close-btn:hover {
+  background-color: #e2e8f0;
+}
+
+.add-todo-form label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.add-todo-form input,
+.add-todo-form textarea,
+.add-todo-form select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  outline: none;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.add-todo-form textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.add-todo-form input:focus,
+.add-todo-form textarea:focus,
+.add-todo-form select:focus {
+  border-color: #3b82f6;
+}
+
+.submit-btn {
+  border: none;
+  padding: 12px;
+  margin-top: 10px;
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 7px;
+  font-size: 14px;
+}
+
+.submit-btn:hover {
+  background-color: #2563eb;
+}

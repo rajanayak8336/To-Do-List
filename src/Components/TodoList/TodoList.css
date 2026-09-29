@@ -1,0 +1,170 @@
+.todo-container {
+  margin-left: 240px;
+  padding: 30px;
+  background-color: #f8fafc;
+  min-height: calc(100vh - 70px);
+}
+
+.todo-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.todo-header h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #1e293b;
+}
+
+.todo-header p {
+  margin: 5px 0 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.add-task-btn {
+  border: none;
+  background-color: #3b82f6;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.add-task-btn:hover {
+  background-color: #2563eb;
+}
+
+.task-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.summary-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+}
+
+.summary-card h3 {
+  margin: 0;
+  font-size: 24px;
+  color: #1e293b;
+}
+
+.summary-card p {
+  margin: 5px 0 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-buttons button {
+  border: 1px solid #e2e8f0;
+  background-color: white;
+  color: #64748b;
+  padding: 8px 16px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.filter-buttons button:hover {
+  border-color: #3b82f6;
+  color: #3b82f6;
+}
+
+.filter-buttons button.filter-active {
+  background-color: #3b82f6;
+  color: white;
+  border-color: #3b82f6;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.empty-state {
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.empty-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.empty-state h3 {
+  margin: 0 0 5px;
+  color: #1e293b;
+}
+
+.empty-state p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+  .todo-container {
+    margin-left: 70px;
+    padding: 20px;
+  }
+
+  .task-summary {
+    gap: 10px;
+  }
+}
+
+
+@media (max-width: 500px) {
+
+  .todo-container {
+    padding: 15px;
+  }
+
+  .todo-header {
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .todo-header h1 {
+    font-size: 22px;
+  }
+
+  .add-task-btn {
+    padding: 9px 12px;
+  }
+
+  .task-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-buttons {
+    overflow-x: auto;
+  }
+}
