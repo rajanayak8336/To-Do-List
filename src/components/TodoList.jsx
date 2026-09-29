@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import Todo from "../Todo/Todo";
-import AddTodo from "../AddTodo/AddTodo";
-import "./TodoList.css";
+
+import './TodoList.css';
+import Todo from "./Todo";
+import AddTodo from "./AddTodo";
 
 const TodoList = ({
   todos,

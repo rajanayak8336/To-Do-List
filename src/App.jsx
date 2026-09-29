@@ -1,9 +1,11 @@
 import React, { useState } from "react";
-
-import Sidebar from "./components/Sidebar/Sidebar";
-import Header from "./components/Header/Header";
-import TodoList from "./components/TodoList/TodoList";
 import "./App.css";
+import Sidebar from "./components/Sidebar";
+import Header from "./components/Header";
+import TodoList from "./components/TodoList";
+
+
+
 
 const App = () => {
   const [todos, setTodos] = useState([
@@ -123,7 +125,7 @@ const App = () => {
         setFilter={setFilter}
       />
 
-      <Header
+      <Header 
         searchText={searchText}
         setSearchText={setSearchText}
       />
